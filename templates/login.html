@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/static/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Login</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body onclick="body()">
 
@@ -18,9 +19,7 @@
             <div class="nav-left center">
                 <a href="index.html"><button class="bg-none border-none"><img src="/media/img/Logo.png" alt="logo" class="w-100 pb-3"></button></a>
                 <ul class="center m-0 p-0 py-4">
-                    <a href="index.html" class="td-none text-dark libre phover p40020 ms-5"><li>Home</li></a>
-                    <a href="tag.html" class="td-none text-dark libre phover p40020 mx-5"><li>Tags</li></a>
-                    <a href="about.html" class="td-none text-dark libre phover p40020"><li>About</li></a>
+                   
                 </ul>
             </div>
             <div class="nav-right d-flex p-4">
@@ -37,8 +36,8 @@
 
     <div class="container center">
         <div class="welcome">
-            <p class="p70033 libre text-center">Welcome back!</p>
-            <p class="p40016 sans  text-center">Sign in to get the most out of nuntium.</p>
+            <p class="p70033 libre text-center">Kirishni Tasdiqlash</p>
+            <p class="p40016 sans  text-center">Foydalanish uchun tizimga kiring</p>
             {{error}}
             {{username}}
             {{password}}
@@ -48,22 +47,27 @@
                 {% csrf_token %}
                 <div class="username text-center">
                     <img src="/media/img/user 1.png" alt="user" class="in">
-                    <input type="text" placeholder="Username" name="username" class="inpu user">
+                    <input type="text" placeholder="Foydalanuchi nomi" name="username" class="inpu user">
                 </div>
                 <div class="pasword mt-3 text-center">
                     <img src="/media/img/key 1.png" alt="key" class="in">
-                    <input type="password" placeholder="Password" name="password" class="inpu password">
+                    <input type="password" placeholder="Parol" name="password" class="inpu password">
                 </div>
                 <div class="ms-4 mt-3 w-125 d-flex between">
                     <div class="left d-flex">
-                        <input type="checkbox" class="check ms-2 mt-1">
-                        <p class="p40012 sans mute ms-2">Remember me</p>
+                      
                     </div>
                     <div class="right">
-                        <a href="" class="td-none"><p class="p40012 mute">Forgot Password?</p></a>
+                        <a href="" class="td-none"><p class="p40012 mute">Prolni unitdim?</p></a>
                     </div>
+                   
                 </div>
-                <button class="ms-3 but py-3 px-5 p40020 libre w-100 mt-3" onclick="login()">Login</button>
+                {% if active %}
+                <p class="ms-5 newclass" style="color:red;">
+                      kirish tasdiqlanmadi   foydalanuchu aktiv!
+                </p>
+                {% endif %}
+                <button class="ms-3 but py-3 px-5 p40020 libre w-100 mt-3" onclick="login()">Kirish</button>
             </form>
         </div>
     </div>

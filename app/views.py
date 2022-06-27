@@ -37,7 +37,9 @@ def login(request):
                 response.cookies['token'] = login.token
                 return response
             else:
-                return redirect('home')
+                return render(request, 'login.html', {
+                    'active': True,
+                })
         else:
             return redirect('login')
 
