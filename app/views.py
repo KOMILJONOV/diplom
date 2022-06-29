@@ -11,8 +11,17 @@ def home(request):
     if token:
         login:Logins = Logins.objects.filter(token=token).first()
         if login:
-            return render(request, 'index.html')
-    return redirect('login')
+            return render(request, 'index.html', {
+                'secure': False
+            })
+        else:
+            return render(request, 'index.html', {
+                'secure': True
+            })
+    else:
+        return render(request, 'index.html', {
+                'secure': True
+            })
     
 
 
@@ -52,3 +61,4 @@ def logout(request):
             login.delete()
             return redirect('login')
     return redirect('login')
+
