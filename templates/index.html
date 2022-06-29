@@ -22,7 +22,7 @@
                 <!-- <button class="bg-none border-none search" onclick="search()"><img src="img/search 1.png" alt="search"></button> -->
                 <button class="bg-none border-none off" onclick="input()"><img src="/media/img/search 1.png" alt="search"></button>
                 <input type="text" class="input d-none" onblur="sear()">
-                <a href="/logout"><button class="ms-5 but py-3 px-5 p40020 libre" onclick="login()">Log out</button></a>
+                <a href="/logout"><button class="ms-5 but py-3 px-5 p40020 libre" onclick="login()">{% if secure %} Log in {% else %} Log out{% endif%}</button></a>
             </div>
         </div>
     </div>
