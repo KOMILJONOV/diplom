@@ -11,7 +11,7 @@ def home(request):
     if token:
         login:Logins = Logins.objects.filter(token=token).first()
         if login:
-            return render(request, 'index.html', {
+            return render(request, 'abdurahmon.html', {
                 'secure': False
             })
         else:

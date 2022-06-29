@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/static/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Abdurahmon</title>
+  </head>
+  <body onclick="body()">
+    <div class="navbar w-100 py-3 mb-5 row">
+      <div class="col-sm-12 d-flex nav">
+        <div class="nav-left center">
+          <a href="abdurahmon.html" class="ms-2"
+            ><button class="bg-none border-none">
+              <img
+                src="/media/img/Logo.png"
+                alt="logo"
+                class="w-100 pb-3"
+              /></button
+          ></a>
+          <ul class="center m-0 p-0 py-4">
+            <a
+              href="abdurahmon.html"
+              class="td-none text-dark libre p70020 ms-5"
+              ><li>Home</li></a
+            >
+            <a
+              href="ab-tag.html"
+              class="td-none text-dark libre p40020 mx-5 phover"
+              ><li>Tags</li></a
+            >
+            <a
+              href="ab-about.html"
+              class="td-none text-dark libre p40020 phover"
+              ><li>About</li></a
+            >
+          </ul>
+        </div>
+        <div class="nav-right d-flex p-4">
+          <!-- <button class="bg-none border-none search" onclick="search()"><img src="/media/img/search 1.png" alt="search"></button> -->
+          <button class="bg-none border-none off" onclick="input()">
+            <img src="/media/img/search 1.png" alt="search" />
+          </button>
+          <input type="text" class="input d-none" />
+          <button class="bg-none border-none mx-3">
+            <img src="/media/img/bell 1.png" alt="" class="" />
+          </button>
+          <div class="btn-group ms-2">
+            <button
+              type="button"
+              class="bg-none border-none dropdown-toggle"
+              data-bs-toggle="dropdown"
+              data-bs-display="static"
+              aria-expanded="false"
+            >
+              <img src="/media/img/b.jpg" alt="" class="br-50" />
+            </button>
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-lg-left menu"
+            >
+              <li>
+                <a class="dropdown-item" href="profile-abdurahmon.html">
+                  <p class="p70016 sans m-0">Abdurahmon</p>
+                  <p class="p40014 sans mute m-0">@abdurahmon1</p>
+                </a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="ab-dashboard.html">Dashboard</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="ab-dashboard.html"
+                  >Write a Post</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="ab-dashboard.html">Settings</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="ab-dashboard.html">Help</a>
+              </li>
+              <li><a class="dropdown-item" href="/logout">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="video-bg w-100 mb-5">
+      <video
+        src="/media/img/InShot_20220623_151439243.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <div class="effects"></div>
+      <div class="video-bg__content libre">ABDURAHMON</div>
+    </div>
+    <div class="pick mb-5">
+      <div class="container">
+        <div class="editor mb-5">
+          <p class="p70042 corniy">Editor’s Picks</p>
+          <div class="edi"></div>
+        </div>
+        <div class="container">
+          <div class="row sit">
+            <div class="col-sm-4 pt-2">
+              <img
+                src="/media/img/Аннотация 2022-06-23 152743.png"
+                alt=""
+                class="w-100"
+              />
+            </div>
+            <div class="col-sm-4 pt-5">
+              <p class="p40020 sans mute m-0">MINIMALISM</p>
+              <p class="p70033 libre m-0">
+                Culpa sit Laboris Exercitation ea Fugiat
+              </p>
+              <div class="d-flex m-0">
+                <p class="p40016 mute sans">Leslie Pena</p>
+                <div class="dot my-2 mx-1"></div>
+                <p class="p40016 mute sans">April 25, 2012 (6 mins read)</p>
+              </div>
+              <p class="p40016 sans m-0">
+                Incididunt occaecat et qui dolore consectetur magna. Lorem
+                veniam ut et labore consequat ut ex sunt. Ut et nostrud aliquip
+                do anim proident ad nulla consectetur eu aute ex anim mollit.
+                Anim aute exercitation nisi fugiat. Dolor velit excepteur
+                commodo proident nulla commodo ullamco labore et esse.
+              </p>
+            </div>
+          </div>
+          <div class="row sit mt-5">
+            <div class="col-sm-4 pt-2">
+              <img src="/media/img/abdurahmon1.jpg" alt="" class="cover" />
+            </div>
+            <div class="col-sm-4 pt-5">
+              <p class="p40020 sans mute m-0">MINIMALISM</p>
+              <p class="p70033 libre m-0">
+                Culpa sit Laboris Exercitation ea Fugiat
+              </p>
+              <div class="d-flex m-0">
+                <p class="p40016 mute sans">Leslie Pena</p>
+                <div class="dot my-2 mx-1"></div>
+                <p class="p40016 mute sans">April 25, 2012 (6 mins read)</p>
+              </div>
+              <p class="p40016 sans m-0">
+                Incididunt occaecat et qui dolore consectetur magna. Lorem
+                veniam ut et labore consequat ut ex sunt. Ut et nostrud aliquip
+                do anim proident ad nulla consectetur eu aute ex anim mollit.
+                Anim aute exercitation nisi fugiat. Dolor velit excepteur
+                commodo proident nulla commodo ullamco labore et esse.
+              </p>
+            </div>
+          </div>
+          <div class="row sit mt-5">
+            <div class="col-sm-4 pt-2">
+              <img src="/media/img/abdurahmon2.jpg" alt="" class="cover" />
+            </div>
+            <div class="col-sm-4 pt-5">
+              <p class="p40020 sans mute m-0">MINIMALISM</p>
+              <p class="p70033 libre m-0">
+                Culpa sit Laboris Exercitation ea Fugiat
+              </p>
+              <div class="d-flex m-0">
+                <p class="p40016 mute sans">Leslie Pena</p>
+                <div class="dot my-2 mx-1"></div>
+                <p class="p40016 mute sans">April 25, 2012 (6 mins read)</p>
+              </div>
+              <p class="p40016 sans m-0">
+                Incididunt occaecat et qui dolore consectetur magna. Lorem
+                veniam ut et labore consequat ut ex sunt. Ut et nostrud aliquip
+                do anim proident ad nulla consectetur eu aute ex anim mollit.
+                Anim aute exercitation nisi fugiat. Dolor velit excepteur
+                commodo proident nulla commodo ullamco labore et esse.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="video-bg w-100 mb-5">
+      <video
+        src="/media/img/253440971_4665958266794484_1627875486623528380_n.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <div class="effects"></div>
+      <div class="video-bg__content libre">ABDURAHMON</div>
+    </div>
+    <div class="mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-8">
+            <div class="row">
+              <div class="col-xl-4">
+                <img src="/media/img/a.jpg" alt="" class="over1" />
+              </div>
+              <div class="col-xl-8 pt-5">
+                <p class="p40020 sans mute m-0">NATURE</p>
+                <p class="p70033 libre m-0">Tempor deserunt Sunt Qui</p>
+                <div class="d-flex m-0">
+                  <p class="p40016 mute sans">Connie Robertson</p>
+                  <div class="dot my-2 mx-1"></div>
+                  <p class="p40016 mute sans">November 3, 2012</p>
+                </div>
+                <p class="p40016 sans m-0">
+                  Ea qui dolor aute cupidatat ad pariatur proident. Mollit nulla
+                  tempor aute reprehenderit ut dolore mollit nisi consequat
+                  excepteur ex officia pariatur irure.
+                </p>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-xl-4">
+                <img src="/media/img/abdurahmon3.jpg" alt="" class="over1" />
+              </div>
+              <div class="col-xl-8 pt-5">
+                <p class="p40020 sans mute m-0">NATURE</p>
+                <p class="p70033 libre m-0">Tempor deserunt Sunt Qui</p>
+                <div class="d-flex m-0">
+                  <p class="p40016 mute sans">Connie Robertson</p>
+                  <div class="dot my-2 mx-1"></div>
+                  <p class="p40016 mute sans">November 3, 2012</p>
+                </div>
+                <p class="p40016 sans m-0">
+                  Ea qui dolor aute cupidatat ad pariatur proident. Mollit nulla
+                  tempor aute reprehenderit ut dolore mollit nisi consequat
+                  excepteur ex officia pariatur irure.
+                </p>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-xl-4">
+                <img src="/media/img/abdurahmon5.jpg" alt="" class="over1" />
+              </div>
+              <div class="col-xl-8">
+                <p class="p40020 sans mute m-0">NATURE</p>
+                <p class="p70033 libre m-0">Tempor deserunt Sunt Qui</p>
+                <div class="d-flex m-0">
+                  <p class="p40016 mute sans">Connie Robertson</p>
+                  <div class="dot my-2 mx-1"></div>
+                  <p class="p40016 mute sans">November 3, 2012</p>
+                </div>
+                <p class="p40016 sans m-0">
+                  Ea qui dolor aute cupidatat ad pariatur proident. Mollit nulla
+                  tempor aute reprehenderit ut dolore mollit nisi consequat
+                  excepteur ex officia pariatur irure.
+                </p>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-xl-4">
+                <img src="/media/img/abdurahmon6.jpg" alt="" class="over1" />
+              </div>
+              <div class="col-xl-8 pt-5">
+                <p class="p40020 sans mute m-0">NATURE</p>
+                <p class="p70033 libre m-0">Tempor deserunt Sunt Qui</p>
+                <div class="d-flex m-0">
+                  <p class="p40016 mute sans">Connie Robertson</p>
+                  <div class="dot my-2 mx-1"></div>
+                  <p class="p40016 mute sans">November 3, 2012</p>
+                </div>
+                <p class="p40016 sans m-0">
+                  Ea qui dolor aute cupidatat ad pariatur proident. Mollit nulla
+                  tempor aute reprehenderit ut dolore mollit nisi consequat
+                  excepteur ex officia pariatur irure.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2">
+            <ul class="p40016 sans">
+              <a href="a-tag.html" class="td-none black"
+                ><li class="p70020">tags.</li></a
+              >
+              <a href="a-tag.html" class="td-none black"
+                ><li class="mt-4">Technology</li></a
+              >
+              <a href="a-tag.html" class="td-none black"
+                ><li class="mt-4">Open Source</li></a
+              >
+              <a href="a-tag.html" class="td-none black"
+                ><li class="mt-4">JavaScript</li></a
+              >
+              <a href="a-tag.html" class="td-none black"
+                ><li class="mt-4">Minimalism</li></a
+              >
+              <a href="a-tag.html" class="td-none black"
+                ><li class="mt-4">Self-help</li></a
+              >
+              <a href="a-tag.html" class="td-none black"
+                ><li class="mt-4">Animals</li></a
+              >
+              <a href="a-tag.html" class="td-none black"
+                ><li class="mt-4">Herbivores</li></a
+              >
+              <a href="a-tag.html" class="td-none black"
+                ><li class="mt-4">HTML</li></a
+              >
+              <a href="a-tag.html" class="td-none black"
+                ><li class="mt-4">CSS</li></a
+              >
+              <a href="a-tag.html" class="td-none black"
+                ><li class="mt-4">PHP</li></a
+              >
+              <a href="a-tag.html" class="td-none black"
+                ><li class="mt-4">Web Technologies</li></a
+              >
+              <a href="a-tag.html" class="td-none black"
+                ><li class="mt-4">Career</li></a
+              >
+              <a href="a-tag.html" class="td-none black"
+                ><li class="mt-4">Life</li></a
+              >
+              <a href="a-tag.html" class="td-none black"
+                ><li class="mt-4">Spirituality</li></a
+              >
+              <a href="a-tag.html" class="td-none black"
+                ><li class="mt-4">Food</li></a
+              >
+              <a href="a-tag.html" class="td-none black"
+                ><li class="mt-4">Cooking</li></a
+              >
+              <a href="a-tag.html" class="td-none black"
+                ><li class="mt-4">Sports</li></a
+              >
+              <a href="a-tag.html" class="td-none black"
+                ><li class="mt-4">Racing</li></a
+              >
+              <a href="a-tag.html" class="td-none black"
+                ><li class="mt-4">Mountain Hiking</li></a
+              >
+              <a href="a-tag.html" class="td-none black"
+                ><li class="mt-4">Cruising</li></a
+              >
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="up">
+      <button class="bg-none border-none">
+        <a href="#">
+          <svg
+            class="upp"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"
+          >
+            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M54.63 246.6L192 109.3l137.4 137.4C335.6 252.9 343.8 256 352 256s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25l-160-160c-12.5-12.5-32.75-12.5-45.25 0l-160 160c-12.5 12.5-12.5 32.75 0 45.25S42.13 259.1 54.63 246.6zM214.6 233.4c-12.5-12.5-32.75-12.5-45.25 0l-160 160c-12.5 12.5-12.5 32.75 0 45.25s32.75 12.5 45.25 0L192 301.3l137.4 137.4C335.6 444.9 343.8 448 352 448s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25L214.6 233.4z"
+            />
+          </svg>
+        </a>
+      </button>
+    </div>
+
+    <video src="/media/img/253440971_4665958266794484_1627875486623528380_n.mp4" controls="nodownload"></video>
+
+
+
+
+    dfsdfgdfg {% if secure %}
+    <script>
+      window.addEventListener("mousedown", (e) => {
+        e.preventDefault();
+      });
+
+      // rasmda mishkani ong tomonini bossa hec narsa bolmadi
+      let imgEvents = document.querySelector("img");
+      imgEvents.addEventListener("contextmenu", (e) => {
+        e.preventDefault();
+      });
+
+      // inspenktni mishka bilan yopish
+      window.addEventListener("contextmenu", (e) => {
+        e.preventDefault();
+      });
+
+      // inspektni f12 dan yopish
+      window.addEventListener("keydown", (e) => {
+        console.log(e.keyCode); // f12 ni kodini aniqlash f12 ni key kodi 123
+
+        if (e.keyCode == 123) {
+          e.preventDefault();
+        }
+
+        // inspektni ochida ctrl + shift + i ham bor shundan faqat ctrlni ozini yopamiz ctrlni keyCode 17ga teng
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+          e.preventDefault();
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 67) {
+          e.preventDefault();
+        }
+      });
+    </script>
+    {% endif %} {{secure}}
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
